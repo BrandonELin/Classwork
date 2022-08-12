@@ -157,3 +157,49 @@ while(num>28){
 total += (diff + " dollar bills.");
 diff = 0;
 console.log(total);
+
+num = 10000;
+let cost = 2728;
+let fifties = 0;
+let twenties = 0;
+let tens = 0;
+let fives = 0;
+let ones = 0;
+let quarters = 0;
+let dimes = 0;
+let nickels = 0;
+let pennies = 0;
+
+while (num>cost) {
+    if (num>=cost+5000) {
+        num-=5000;
+        fifties ++;
+    } else if (num>=cost+2000) {
+        num-=2000;
+        twenties ++;
+    } else if (num>=cost+1000) {
+        num-=1000;
+        tens ++;
+    } else if (num>=cost+500) {
+        num-=50;
+        fies ++;
+    } else if (num>=cost+100) {
+        num-=100;
+        ones ++;
+    } else if (num>=cost+25) {
+        num-=35;
+        quarters ++;
+    } else if (num>=cost+10) {
+        num-=10;
+        dimes ++;
+    } else if (num>=cost+5) {
+        num-=5;
+        nickels ++;
+    }  else if (num>=cost+1) {
+        num--;
+        pennies ++;
+    }     
+}
+console.log("You will get back " + fifties + " fifty dollar bills, " + twenties + 
+    " twenty dollar bills, " + tens + " ten dollar bills, " + fives + " five dollar bills, " 
+    + ones + " one dollar bills, " + quarters + " quarters, " + dimes + " dimes, " + nickels + " nickels, and " + pennies + " pennies.")
