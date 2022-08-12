@@ -140,66 +140,107 @@ let num =3;
 //     num++;
 // }
 
-//exercise 8
-num = 100;
-diff = 0;
-total = "You will get back ";
-while(num>30){
-    num-=10;
-    diff++
-}
-total += (diff + " ten dollar bills and ");
-diff = 0; 
-while(num>28){
-    num--;
-    diff++
-}
-total += (diff + " dollar bills.");
-diff = 0;
-console.log(total);
+// //exercise 8
+// num = 100;
+// diff = 0;
+// total = "You will get back ";
+// while(num>30){
+//     num-=10;
+//     diff++
+// }
+// total += (diff + " ten dollar bills and ");
+// diff = 0; 
+// while(num>28){
+//     num--;
+//     diff++
+// }
+// total += (diff + " dollar bills.");
+// diff = 0;
+// console.log(total);
 
-num = 10000;
-let cost = 2728;
-let fifties = 0;
-let twenties = 0;
-let tens = 0;
-let fives = 0;
-let ones = 0;
-let quarters = 0;
-let dimes = 0;
-let nickels = 0;
-let pennies = 0;
+// num = 10000;
+// let cost = 2728;
+// let fifties = 0;
+// let twenties = 0;
+// let tens = 0;
+// let fives = 0;
+// let ones = 0;
+// let quarters = 0;
+// let dimes = 0;
+// let nickels = 0;
+// let pennies = 0;
 
-while (num>cost) {
-    if (num>=cost+5000) {
-        num-=5000;
-        fifties ++;
-    } else if (num>=cost+2000) {
-        num-=2000;
-        twenties ++;
-    } else if (num>=cost+1000) {
-        num-=1000;
-        tens ++;
-    } else if (num>=cost+500) {
-        num-=50;
-        fies ++;
-    } else if (num>=cost+100) {
-        num-=100;
-        ones ++;
-    } else if (num>=cost+25) {
-        num-=35;
-        quarters ++;
-    } else if (num>=cost+10) {
-        num-=10;
-        dimes ++;
-    } else if (num>=cost+5) {
-        num-=5;
-        nickels ++;
-    }  else if (num>=cost+1) {
-        num--;
-        pennies ++;
-    }     
+// while (num>cost) {
+//     if (num>=cost+5000) {
+//         num-=5000;
+//         fifties ++;
+//     } else if (num>=cost+2000) {
+//         num-=2000;
+//         twenties ++;
+//     } else if (num>=cost+1000) {
+//         num-=1000;
+//         tens ++;
+//     } else if (num>=cost+500) {
+//         num-=50;
+//         fies ++;
+//     } else if (num>=cost+100) {
+//         num-=100;
+//         ones ++;
+//     } else if (num>=cost+25) {
+//         num-=35;
+//         quarters ++;
+//     } else if (num>=cost+10) {
+//         num-=10;
+//         dimes ++;
+//     } else if (num>=cost+5) {
+//         num-=5;
+//         nickels ++;
+//     }  else if (num>=cost+1) {
+//         num--;
+//         pennies ++;
+//     }     
+// }
+// console.log("You will get back " + fifties + " fifty dollar bills, " + twenties + 
+//     " twenty dollar bills, " + tens + " ten dollar bills, " + fives + " five dollar bills, " 
+//     + ones + " one dollar bills, " + quarters + " quarters, " + dimes + " dimes, " + nickels + " nickels, and " + pennies + " pennies.")
+
+//extra exercise
+// for (let i=1; i<=5; i++){
+//     let str = '';
+//     for (let j=1; j<=i; j++) {
+//         str+=j
+//     }
+//     console.log(str)
+// }
+
+// for (let i=5; i>=1; i--){
+//     let str = '';
+//     for (let j=i; j>=1; j--) {
+//         str+=i
+//     }
+//     console.log(str)
+// }
+
+let num3 = 1;
+while(num3 <= 5) {
+    let str1 =""
+    let num4 = 1;
+    while(num4 <= num3) {
+        str1 += num4
+        num4++
+    }
+    console.log(str1)
+    num3++
 }
-console.log("You will get back " + fifties + " fifty dollar bills, " + twenties + 
-    " twenty dollar bills, " + tens + " ten dollar bills, " + fives + " five dollar bills, " 
-    + ones + " one dollar bills, " + quarters + " quarters, " + dimes + " dimes, " + nickels + " nickels, and " + pennies + " pennies.")
+
+num3 = 5;
+while(num3 >= 1) {
+    let str1 =""
+    let num4 = num3;
+    while(num4 >= 1) {
+        str1 += num3
+        num4--
+    }
+    console.log(str1)
+    num3--
+}
