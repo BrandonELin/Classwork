@@ -106,3 +106,4 @@ function addList(...y) {
 console.log(addList(1))
 console.log(addList(1,50,1.23))
 console.log(addList(7,-12))
+console.log(addList())
