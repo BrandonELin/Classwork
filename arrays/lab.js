@@ -4,12 +4,12 @@ function maxOfTwoNumbers(x,y) {
 
 console.log(maxOfTwoNumbers(5,4))
 
-function maxOfThree(x,y,z) {
+const maxOfThree = function(x,y,z) {
     if (x>=y) {
-        if(x>=y) {
+        if(x>=z) {
             return x
         } else {
-            return y
+            return z
         }
     } else if (y>=z) {
         return y
@@ -36,7 +36,7 @@ function isCharAVowel(x) {
 
 console.log(isCharAVowel("A"))
 
-function sumArray(numbers) {
+ const sumArray = function(numbers) {
     let output = 0
     for (let i =0; i < numbers.length; i++) {
         output +=numbers[i]
@@ -54,7 +54,7 @@ function multiplyArray(numbers) {
 }
 console.log(multiplyArray([1,2,4]))
 
-function numArgs(...a) {
+const  numArgs = function(...a) {
     return a.length
 }
 console.log(numArgs(1,2,3,4))
@@ -68,16 +68,17 @@ function reverseString(x){
 }
 console.log(reverseString('Hello'))
 
-function longestStringInArray(stringArray) {
+const longestStringInArray = function(stringArray) {
     let output = 0
     for (let i=0; i< stringArray.length; i++){
         if(stringArray[i].length > output) {
             output = stringArray[i].length
         }
     }
-    return output
+    return output;
 }
-console.log(longestStringInArray(['Hello', 'hi', 'yo']))
+let z = ['Hello', 'hi', 'yo']
+console.log(longestStringInArray(z))
 
 function stringsLongerThan(stringArray, z) {
     let output = []
@@ -88,7 +89,7 @@ function stringsLongerThan(stringArray, z) {
     }
     return output
 }
-console.log(stringsLongerThan(['Hello', 'hi', 'yo'], 1))
+console.log(stringsLongerThan(['Hello', 'hi', 'yo'], 4))
 
 function addList(...y) {
     if(!y) {
