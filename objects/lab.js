@@ -36,13 +36,10 @@ let radio = {
         },
     ],
     changeStation() {
-        let x = Math.floor((Math.random()*100))%2;
-        let y = Math.floor((Math.random()*100))%3;
+        let x = Math.floor((Math.random()*2));
+        let y = Math.floor((Math.random()*3));
         let z = radio.stations[x].songs[y];
         console.log(`Now Playing ${z.title} by ${z.artist}`)
     }
 }
-
-console.log(Math.random())
-
 radio.changeStation()
