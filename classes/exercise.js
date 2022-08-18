@@ -86,7 +86,10 @@ class BankAccount{
 }
 
 class CheckingAccount extends BankAccount{
-    overdraftEnabled = true;
+    constructor(ownerName, balance, overDraft){
+        super(ownerName, balance);
+        this.overdraftEnabled = overDraft;
+    }
     withdraw(money){
         if (money<=this.balance){
             this.balance -= money;
@@ -104,11 +107,10 @@ class SavingAccount extends BankAccount{
     }
 }
 
-let b1 = new CheckingAccount("Paul", 1500)
-let b2 = new SavingAccount("Paul", 15000)
+let b1 = new CheckingAccount("Paul", 1500,false)
+let b2 = new SavingAccount("Pawl", 15000)
 b1.deposit(400)
 console.log(b1.balance)
-
 b1.withdraw(2100)
 b2.withdraw(100)
 console.log(b2.balance)
