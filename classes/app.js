@@ -125,10 +125,11 @@ for(i=0; i<100; i++){
     freighter[i] = new Vehicle(newCar[0],newCar[1],newCar[2])
 }
 
-console.log(freighter.length)
-for(let i =0; i<100; i++){
-    if(Math.random()>0.5){
-        freighter[i].start()
-    }
-    console.log(freighter[i])
-}
+// console.log(freighter.length)
+// for(let i =0; i<100; i++){
+//     if(Math.random()>0.5){
+//         freighter[i].start()
+//     }
+//     console.log(freighter[i])
+// }
+
