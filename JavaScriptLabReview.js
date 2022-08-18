@@ -6,13 +6,3 @@
 5. pseudocding is when you map out the code without coding, writing it like
 6. half
 */
-
-let firstVariable = "Hello World"
-firstVariable = 3
-let secondVariable= firstVariable;
-secondVariable = "any string"
-console.log(firstVariable)
-let yourName = "Brandon Lin"
-console.log(`Hello my name is ${yourName}`)
-
-const
