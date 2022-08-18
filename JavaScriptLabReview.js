@@ -59,3 +59,49 @@ function checkAge(age) {
 }
 checkAge(19)
 checkAge(14)
+
+//Section 2
+//A. The Basics
+for(let i = 0;i<10;i++){
+    console.log(i)
+}
+for(let i = 10;i<=400;i++){
+    console.log(i)
+}
+let x = 12
+while(x<4000){
+    console.log(x)
+    x += 3
+}
+
+//B. Get Even
+for(let i = 0;i<=100;i++){
+    let even = i
+    if(i%2===0){
+        even += "<-- is an even number"
+    }
+    console.log(even)
+}
+
+//C. Give me Five
+// I'm counting 0 as a multiple of 5
+for(let i = 0;i<=100;i++){
+    if(i%5===0){
+        console.log(`I found a ${i}. High five!`)
+    }
+    if(i%3===0){
+        console.log(`I found a ${i}. Three is a crowd`)
+    }
+}
+
+//D. Savings account
+let bank_account = 0;
+for(let i = 0; i<=10; i++){
+    bank_account += i
+}
+console.log(bank_account)
+bank_account = 0;
+for(let i = 0; i<=100; i++){
+    bank_account += 2*i
+}
+console.log(bank_account)
