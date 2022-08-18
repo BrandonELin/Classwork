@@ -71,13 +71,13 @@ class BankAccount{
     constructor(ownerName, balance){
         this.name = ownerName;
         this.balance = balance;
-        this.acctNum = Math.random()*2000
+        this.acctNum = Math.floor(Math.random()*2000)
     }
     deposit(money){
         this.balance += money;
     }
     withdraw(money){
-        if (money<=balance){
+        if (money<=this.balance){
             this.balance -= money;
         }else{
             console.log("Insufficient funds")
@@ -88,7 +88,7 @@ class BankAccount{
 class CheckingAccount extends BankAccount{
     overdraftEnabled = true;
     withdraw(money){
-        if (money<=balance){
+        if (money<=this.balance){
             this.balance -= money;
         }else if (this.overdraftEnabled===true) {
             this.balance -= money;
@@ -108,5 +108,10 @@ let b1 = new CheckingAccount("Paul", 1500)
 let b2 = new SavingAccount("Paul", 15000)
 b1.deposit(400)
 console.log(b1.balance)
+
+b1.withdraw(2100)
 b2.withdraw(100)
 console.log(b2.balance)
+
+console.log(b1)
+console.log(b2)
