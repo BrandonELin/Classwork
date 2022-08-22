@@ -30,8 +30,20 @@ for(let i = 0; i<100; i+=2){
 }
 
 /////////////////////////////////
-//
+//Wild Wild Life
 /////////////////////////////////
+const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"]
+const sharky = ["Sharky", "shark", 20, "Left Coast"]
+const plantee = ["Plantee", "plant", 5000, "Mordor"]
+const porgee = ["Porgee", "Porg", 186, "Ahch-to"]
+const dart = ["D'art", "Demogorgan Dog", 2, "Upside Down"]
+plantee[2]++
+wolfy[3] = "Gotham City"
+dart[3] = [dart[3],"Hawkins"]
+wolfy.shift("Gameboy")
+console.log(wolfy)
+console.log(plantee)
+console.log(dart)
 
 /////////////////////////////////
 //
