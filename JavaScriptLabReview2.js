@@ -46,8 +46,12 @@ console.log(plantee)
 console.log(dart)
 
 /////////////////////////////////
-//
+//Yell at the Ninja Turtles
 /////////////////////////////////
+const ninjaTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
+for (let i of ninjaTurtles) {
+    console.log(i.toUpperCase())
+}
 
 /////////////////////////////////
 //
