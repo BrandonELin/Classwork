@@ -336,3 +336,32 @@ function oldAndLoud(newUser) {
 updateUser()
 oldAndLoud(user)
 console.log(user)
+
+//Cat combinator
+//1. Mama
+let cat1 = {
+    name: "Mama",
+    breed: "Tabby",
+    age: 7
+}
+console.log(cat1.age)
+console.log(cat1.breed)
+
+//2. Papa
+let cat2 = {
+    name: "Papa",
+    breed: "Calico",
+    age: 12
+}
+
+function combineCats(mama, papa) {
+    console.log(mama, papa)
+    let conCATenation = {
+        name: mama.name+papa.name,
+        breed: mama.breed+"-"+papa.breed,
+        age: 1
+    }
+    return conCATenation;
+}
+console.log(combineCats(cat1, cat2))
+console.log(combineCats(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)),combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2))))
