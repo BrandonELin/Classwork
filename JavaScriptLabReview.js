@@ -68,10 +68,10 @@ for(let i = 0;i<10;i++){
 for(let i = 10;i<=400;i++){
     console.log(i)
 }
-let x = 12
-while(x<4000){
-    console.log(x)
-    x += 3
+let t = 12
+while(t<4000){
+    console.log(t)
+    t += 3
 }
 
 //B. Get Even
@@ -204,3 +204,135 @@ thomsCloset[1][2] = "Footie Pajamas"
 
 console.log(kristynsCloset)
 console.log(thomsCloset)
+
+//IV. Functions
+//A print greeting
+let printGreeting = (name) =>`Hello there, ${name}`;
+
+console.log(printGreeting('slimer'))
+
+//B printCool
+let printCool = (name) =>`${name} is cool`;
+
+console.log(printCool("Captain Reynolds"))
+//C calculate Cube
+let calculateCube = (num) => Math.pow(num,3);
+console.log(calculateCube(5))
+
+//D isVowel
+function isVowel(letter) {
+    let newLetter = letter.toUpperCase();
+    if(newLetter === "A"||newLetter === "E"||newLetter === "I"||newLetter === "O"||newLetter === "U"){
+        return true
+    } else {
+        return false
+    }
+}
+console.log(isVowel('a'))
+console.log(isVowel('g'))
+//E get two lengths
+function getTwoLengths(str1,str2){
+    return [str1.length, str2.length]
+}
+console.log(getTwoLengths("hank", "Hippopalous"))
+
+//F Get multiple lengths
+function getMultipleLengths(str) {
+    let lengths = []
+    for(let i = 0; i<str.length; i++){
+        lengths.push(str[i].length)
+    }
+    return lengths
+}
+console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]))
+
+//G max of three
+function maxOfThree(x,y,z) {
+    if(x>y) {
+        if(x>z){
+            return x
+        } else {
+            return z
+        }
+    } else {
+        if(y>z){
+            return y
+        }else {
+            return z
+        }
+    }
+}
+console.log(maxOfThree(16,9,11))
+
+//H printLongestWord
+function printLongestWord(words){
+    let long = words[0]
+    for(let i = 1; i<words.length; i++){
+        if (words[i].length>long.length) {
+            long = words[i]
+        }
+    }
+    return long
+}
+console.log(printLongestWord(["Bojack", "Princess", "Diane", "a", "Max", "Brincess", "big"]))
+
+//Objects
+//A user
+let user = {
+    name: "Jeff Bezos",
+    email: "JeffBezos@aol.com",
+    age: 55,
+    purchased: [],
+    friend : {
+        name: "Mark Zuckerburg",
+        age: 37,
+        location : "Meta",
+        purchased: []
+    }
+}
+console.log(user)
+
+//B update
+user.email = "GeoffBezose@hotmail.com"
+user.age++
+console.log(user)
+
+//C adding keys and values
+user.location = "Mars"
+console.log(user)
+
+//D Shopaholic
+user.purchased.push("carbohydrates")
+user.purchased.push("peace of mind")
+user.purchased.push("Merino jodhpurs")
+console.log(user.purchased[2])
+
+//E Object squared
+console.log(user.friend.name)
+console.log(user.friend.location)
+user.friend.age = 55
+user.friend.purchased.push("The One Ring")
+user.friend.purchased.push("A latte")
+console.log(user.friend.purchased[1])
+
+//F Loops
+for(let i = 0; i<user.purchased.length; i++){
+    console.log(user.purchased[i])
+}
+for(let i = 0; i<user.friend.purchased.length; i++){
+    console.log(user.friend.purchased[i])
+}
+
+//G Functions
+function updateUser() {
+    user.age++
+    user.name = user.name.toUpperCase()
+}
+function oldAndLoud(newUser) {
+    newUser.age++
+    newUser.name = newUser.name.toUpperCase()
+}
+
+updateUser()
+oldAndLoud(user)
+console.log(user)
