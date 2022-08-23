@@ -108,10 +108,43 @@ const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,
 nums.sort(function(a, b){return a - b})
 console.log(nums[Math.floor(nums.length/2)])
 
+/////////////////////////////////
+//Return of the Closets
+/////////////////////////////////
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    'right sock',
+    "GA hoodie",
+    "green pants",
+    "yello knit hat",
+    "marshmallow peeps"
+];
 
-/////////////////////////////////
-//
-/////////////////////////////////
+const thomsCloset = [
+    [
+        //shirts
+        "grey button-up",
+        "dark grey button=up",
+        "light blue button-up",
+        "blue button-up"
+    ], [
+        //pants
+        'grey jeans',
+        'jeans',
+        'PJs'
+    ],[
+        //accessories
+        "wool mittens",
+        "wool scarf",
+        "raybans"
+    ]
+];
+let kristynsShoe = kristynsCloset.shift()
+thomsCloset[2].push(kristynsShoe)
+console.log(`Kristyn will be wearing a ${kristynsCloset.splice([Math.floor(Math.random()*kristynsCloset.length)],1)}, a ${kristynsCloset.splice([Math.floor(Math.random()*kristynsCloset.length)],1)}, and a ${kristynsCloset.splice([Math.floor(Math.random()*kristynsCloset.length)],1)}`)
+console.log(`Thom will be wearing a ${thomsCloset[0].splice([Math.floor(Math.random()*thomsCloset[0].length)],1)}, a ${thomsCloset[1].splice([Math.floor(Math.random()*thomsCloset[1].length)],1)}, and a ${thomsCloset[2].splice([Math.floor(Math.random()*thomsCloset[2].length)],1)}`)
+console.log(`Thom might also wear a ${thomsCloset[0].splice([Math.floor(Math.random()*thomsCloset[0].length)],1)}, a ${thomsCloset[1].splice([Math.floor(Math.random()*thomsCloset[1].length)],1)}, and a ${thomsCloset[2].splice([Math.floor(Math.random()*thomsCloset[2].length)],1)}`)
 
 /////////////////////////////////
 //
