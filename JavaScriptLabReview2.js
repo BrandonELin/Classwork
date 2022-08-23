@@ -111,7 +111,7 @@ console.log(nums[Math.floor(nums.length/2)])
 /////////////////////////////////
 //Return of the Closets
 /////////////////////////////////
-const kristynsCloset = [
+let kristynsCloset = [
     "left shoe",
     "cowboy boots",
     'right sock',
@@ -121,7 +121,7 @@ const kristynsCloset = [
     "marshmallow peeps"
 ];
 
-const thomsCloset = [
+let thomsCloset = [
     [
         //shirts
         "grey button-up",
@@ -147,5 +147,45 @@ console.log(`Thom will be wearing a ${thomsCloset[0].splice([Math.floor(Math.ran
 console.log(`Thom might also wear a ${thomsCloset[0].splice([Math.floor(Math.random()*thomsCloset[0].length)],1)}, a ${thomsCloset[1].splice([Math.floor(Math.random()*thomsCloset[1].length)],1)}, and a ${thomsCloset[2].splice([Math.floor(Math.random()*thomsCloset[2].length)],1)}`)
 
 /////////////////////////////////
-//
+//Dirty Laundry
 /////////////////////////////////
+kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    'right sock',
+    "GA hoodie",
+    "green pants",
+    "yello knit hat",
+    "marshmallow peeps"
+];
+thomsCloset = [
+    [
+        //shirts
+        "grey button-up",
+        "dark grey button=up",
+        "light blue button-up",
+        "blue button-up"
+    ], [
+        //pants
+        'grey jeans',
+        'jeans',
+        'PJs'
+    ],[
+        //accessories
+        "wool mittens",
+        "wool scarf",
+        "raybans"
+    ]
+];
+
+for(let i of kristynsCloset){
+    console.log(`WHIRR: Now washing ${i}`)
+}
+
+console.log(thomsCloset[0])
+console.log(thomsCloset[1])
+console.log(thomsCloset[2])
+
+for(let i of thomsCloset){
+    console.log(i)
+}
