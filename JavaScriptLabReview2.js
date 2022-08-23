@@ -78,8 +78,16 @@ console.log(favMovies.indexOf('Volver'))
 //const defines a constant reference, not a constant array
 
 /////////////////////////////////
-//
+//Where is Waldo
 /////////////////////////////////
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                     ["Lucinda", "Jacc", "Neff", "Snoop"],
+                     ["Petunia", ["Baked Goods", "Waldo"]]];
+whereIsWaldo.splice(1,1)
+whereIsWaldo[1].splice(2,1,"No One")
+
+console.log(whereIsWaldo)
+console.log(whereIsWaldo[2][1][1])
 
 /////////////////////////////////
 //
