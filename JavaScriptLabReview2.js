@@ -54,8 +54,28 @@ for (let i of ninjaTurtles) {
 }
 
 /////////////////////////////////
-//
+//Methods Revised
 /////////////////////////////////
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious']
+console.log(favMovies[favMovies.indexOf('Titanic')])
+console.log(favMovies)
+favMovies.sort()
+console.log(favMovies)
+//yes it changed the order
+favMovies.pop()
+favMovies.push('Guardians of the Galaxy')
+favMovies.reverse()
+favMovies.shift()
+console.log(favMovies.unshift())
+//it returns the length of the string
+favMovies.splice(favMovies.indexOf("Django Unchained"),1, "Avatar")
+//it will not permanently change our array, it needs to be saved
+let someMovies = favMovies.slice(0, Math.floor(favMovies.length/2))
+console.log(favMovies)
+console.log(someMovies)
+console.log(favMovies.indexOf('Volver'))
+//We didn't delete Fast and furious, we deleted Volver. It returned -1
+//const defines a constant reference, not a constant array
 
 /////////////////////////////////
 //
