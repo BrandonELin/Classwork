@@ -1,4 +1,4 @@
-let mainEl = document.querySelector("main");
+var mainEl = document.querySelector("main");
 mainEl.style.backgroundColor = 'var(--main-bg)';
 mainEl.innerHTML = "<h1>SEI Rocks!</h1>";
 mainEl.setAttribute("class", "flex-ctr");
