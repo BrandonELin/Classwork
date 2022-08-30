@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    font-family: Helvetica;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+    height: 5em;
+    margin: 5em;
+}
