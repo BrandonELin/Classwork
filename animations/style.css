@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    
+    
+}
+
+.piston {
+    width: 100px;
+    height: 100px;
+    margin: 3px;
+}
+
+.piston-1{
+    grid-row: 1;
+    background-color: red;
+    transition-property: width, transform;
+    transition-duration: 2s, 1s;
+}
+
+.piston-1:hover{   /* hover psuedo class */
+    width: 500px;
+}
+
+.piston:hover ~ .piston-2 {   /* hover psuedo class */
+    
+    width: 500px;
+}
+
+.piston-2{
+    grid-row: 2;
+    background-color: blue;
+    transition-property: width, transform;
+    transition-duration: 2s, 3s;
+    transition-delay: 1s;
+}
+
+.piston-2:hover {   /* hover psuedo class */
+    width: 250px;
+}
+
+.fortune {
+    height: 100px;
+    width: 100px;
+    
+}
+
+#problem-2{
+    display: flex;
+    width: 400px;
+    flex-direction:row;
+    justify-content: center;
+    transition: transform 1s ease-in-out;
+    text-align: center;
+}
+
+
+.tellerA {
+    background-color: red;
+    transition: transform 1s ease-in-out;
+    transform-origin: top left;
+}
+
+#problem-2:hover .backwards{
+    
+    transform: rotate(-180deg);
+    
+}
+
+#problem-2:hover .forwards{
+    
+    transform: rotate(180deg);
+    
+}
+
+.tellerB {
+    background-color: yellow;
+    transition: transform 1s ease-in-out ;
+    transform-origin: bottom left;
+}
+
+.tellerC {
+    background-color: blue;
+    transition: transform 1s ease-in-out;
+    transform-origin: top right;
+}
+
+.tellerD {
+    background-color: green;
+    transition: transform 1s ease-in-out ;
+    transform-origin: bottom right;
+}
+
+p{
+    position: absolute;
+    text-align: center;
+    z-index: -1;
+    font-size: 50px ;
+    left: 175px;
+}
+
+#problem-3{
+    display: flex;
+    height: 500px;
+    width: 400px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Jenga {
+    width: 100px;
+    height: 50px;
+    border: 1px solid white;
+    position: absolute;
+}
+.Jenga:nth-child(even) {
+    background-color: rgb(56, 55, 53);
+}
+
+.box9{
+    transition: transform 1s, 1s;
+    
+}
+.box1:hover .box9{
+    transform: translateY(50px);
+}
