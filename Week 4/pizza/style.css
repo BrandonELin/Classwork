@@ -1,0 +1,13 @@
+body{
+    display:flex;
+    flex-direction: column;
+}
+
+.stop{
+    height:0%;
+    position: absolute;
+}
+
+.listing{
+    background-color: red;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" media="screen" title="no title">
+    <title>Document</title>
+    <script defer src ="script.js"></script>
+</head>
+<body>
+    <form>
+        How Many Complaints do you want to see<br>
+        <input type="text" name="complaint" value = "">
+        <input type="button"name = "manhattan" value="Manhattan" onClick="query('MANHATTAN',this.form.complaint.value)">
+        <input type="button" name = "brooklyn" value="Brooklyn">
+        <input type="button" name = "queens" value="Queens">
+        <input type="button" name = "SI" value="Staten Island">
+        <input type="button" name = "Bronx" value="Bronx">
+    </form>
+
+    <div class = "list"></div>
+    
+</body>
+</html>
